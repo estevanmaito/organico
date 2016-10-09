@@ -1,0 +1,135 @@
+header {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+}
+
+header h1 {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+
+.curso {
+  background-color: #f1f1f1;
+  background-image: url('../img/css.png');
+  background-position: center 1rem;
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #555 !important;
+  display: block;
+  font-size: 1.5rem;
+  margin: 2rem auto 0;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .curso {
+    background-position: 2rem;
+    background-size: 70px;
+    padding: 3rem 0;
+    padding-left: 7rem;
+    width: 360px;
+  }
+}
+
+.tag {
+  background-color: #4DBD2E;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: .3rem .5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.curso span {
+  display: block;
+}
+
+.curso span:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.coluna.exemplo,
+.colunas.exemplo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ddd;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+[class^="icon-"] {
+  color: #ddd;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.caracteristicas {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .caracteristicas {
+    margin: 2rem 0 5rem;
+  }
+}
+
+.caracteristicas h3 {
+  margin-top: .8rem;
+  margin-bottom: .9rem;
+}
+
+h1.exemplo {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+nav {
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+
+.fixed {
+  padding-top: 2rem;
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    position: relative;
+  }
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: #555;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+  font-weight: 700;
+  color: #555;
+}

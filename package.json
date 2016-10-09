@@ -1,0 +1,38 @@
+{
+  "name": "organico",
+  "version": "1.0.0",
+  "description": "Leve, natural e inobstrusivo",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "minify-css": "cleancss -o css/organico.min.css  css/organico.css --rounding-precision -1",
+    "build:css": "npm run autoprefixer && npm run minify-css"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "light",
+    "leve",
+    "organic",
+    "organico",
+    "natural",
+    "grid",
+    "responsivo",
+    "mobile"
+  ],
+  "homepage": "https://estevanmaito.github.io/organico",
+  "author": "Estevan Maito",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estevanmaito/organico.git"
+  },
+  "bugs": {
+    "url": "https://github.com/estevanmaito/organico/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "clean-css": "^3.4.20",
+    "postcss-cli": "^2.6.0"
+  }
+}

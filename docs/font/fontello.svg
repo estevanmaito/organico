@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="traffic-cone" unicode="&#xe800;" d="M480 246q-90 0-156 27t-70 65q44 124 56 158 10-28 59-46t111-18q64 0 112 18t58 46q12-34 56-158-4-38-70-65t-156-27z m0 334q-96 0-124 44l52 142q10 34 72 34t74-34q12-38 50-142-28-44-124-44z m440-384q40-16 41-41t-37-47l-352-188q-38-22-91-22t-91 22l-354 188q-38 20-36 46t42 42l188 76-22-60q0-48 80-82t192-34 192 34 82 82l-22 60z" horiz-adv-x="961" />
+
+<glyph glyph-name="leaf" unicode="&#xe801;" d="M236 646q182 106 506 66 168-22 196-50 4-6-2-10-76-40-130-109t-78-132-65-132-93-105q-138-96-382-4-66-76-114-176-12-24-47-7t-25 39q44 100 129 193t176 153 176 106 141 68l54 20q-14 0-41-1t-104-14-148-38-162-84-161-141q-22 242 174 358z" horiz-adv-x="940" />
+
+<glyph glyph-name="feather" unicode="&#xe802;" d="M60-138q-6-20-26-8-18 8-16 34 4 100 50 226-100 154-52 316 10-32 32-78t44-80 32-30q8 4 0 83t-11 166 25 157q22 44 80 94t104 70q-24-46-33-94t-4-78 21-32q12 0 84 120t106 122q46 4 114-29t82-65q12-24 0-79t-40-83q-44-44-146-62t-114-24q-16-10 12-34 54-48 176-20-56-80-136-114t-132-38-54-10q-4-24 49-54t101-14q-30-56-63-84t-54-35-76-11-85-8z" horiz-adv-x="698" />
+</font>
+</defs>
+</svg>

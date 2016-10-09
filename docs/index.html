@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Orgânico CSS</title>
+  <!-- Icons Font -->
+  <link rel="stylesheet" href="css/fontello.css">
+  <!-- Reset -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Orgânico CSS -->
+  <link rel="stylesheet" href="css/organico.css">
+  <!-- Documents CSS -->
+  <link rel="stylesheet" href="css/docs.css">
+  <!-- Github Style Highlight -->
+  <link rel="stylesheet" href="css/github.min.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="linha">
+      <div class="doze colunas">
+        <h1 class="logo">Orgânico CSS</h1>
+        <p>Leve, natural e inobstrusivo.</p>
+        <a href="#" class="botao">Download</a>
+        <a href="#" class="curso">
+          <span class="tag">CURSO</span>
+          <span>Aprenda a criar um framework</span>
+          <span>Domine layouts responsivos</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="linha">
+    <div class="quatro colunas caracteristicas">
+      <div class="linha">
+        <div class="doze colunas">
+          <span class="icon-feather"></span>
+        </div>
+      </div>
+      <h3>Leve</h3>
+      <p>4,8kb minificado, perfeito para mobile</p>
+    </div>
+    <div class="quatro colunas caracteristicas">
+      <div class="linha">
+        <div class="doze colunas">
+          <span class="icon-leaf"></span>
+        </div>
+      </div>
+      <h3>Natural</h3>
+      <p>Linguagem semântica, como no português escrito.</p>
+    </div>
+    <div class="quatro colunas caracteristicas">
+      <div class="linha">
+        <div class="doze colunas">
+          <span class="icon-traffic-cone"></span>
+        </div>
+      </div>
+      <h3>Inobstrusivo</h3>
+      <p>Não se preocupe em sobrescrever estilos.</p>
+    </div>
+  </div>
+
+  <div class="linha">
+    <div class="oito colunas">
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="apresentacao" class="exemplo">Apresentação</h1>
+          <p>Uma ferramenta para facilitar a criação de layouts com o objetivo de interferir o mínimo possível no layout, dando flexibilidade ao desenvolvedor (menos estilos, menor a necessidade de sobrescrever regras), além de semântica idêntica ao português falado (<code>quatro colunas</code> e já temos um grid!).</p>
+          <p>Se você está começando com CSS e procura por um projeto de fácil compreensão e em português ou quer apenas um framework que não fique no seu caminho te obrigando a escrever mais <code>!important</code> do que estilos propriamente ditos, fique conosco!</p>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="como-usar" class="exemplo">Como usar</h1>
+          <ol>
+            <li>Faça o <a href="https://github.com" target="_blank">download</a>.</li>
+            <li>Adicione a pasta <code>css</code> ao seu projeto.</li>
+            <li>Adicione o código abaixo ao <code>head</code> do seu html.</li>
+          </ol>
+          <pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/normalize.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.min.css&quot;&gt;</code></pre>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="grid" class="exemplo">Grid</h1>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <p>O grid responsivo é composto por 12 colunas que se adaptam ao tamanho da janela ou dispositivo.</p>
+          <ul>
+            <li>Linhas (<code>.linha</code>) devem ser colocadas dentro de um container (<code>.container</code>) para alinhamento apropriado.</li>
+            <li>Use linhas para criar seções horizontais de colunas.</li>
+            <li>O conteúdo deve ser inserido em colunas (<code>.coluna</code> ou <code>.colunas</code>) que devem ser filhas imediatas de linhas (<code>.linha</code>).</li>
+            <li>Colunas são criadas especificando uma quantidade (<code>uma</code> a <code>doze</code>) e o termo apropriado de acordo com a quantidade, <code>coluna</code> ou <code>colunas</code>.</li>
+            <li>É importante seguir esta ordem pois cada elemento introduzido anteriormente, produz um efeito sobre os espaçamentos do layout.</li>
+            <li>Flexbox é utilizado para facilitar a disposição do conteúdo, além de evitar hacks com floats e clears.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <h2>Exemplo</h2>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="uma coluna exemplo">UMA</div>
+        <div class="onze colunas exemplo">ONZE</div>
+      </div>
+      <div class="linha">
+        <div class="duas colunas exemplo">DUAS</div>
+        <div class="dez colunas exemplo">DEZ</div>
+      </div>
+      <div class="linha">
+        <div class="tres colunas exemplo">TRÊS</div>
+        <div class="nove colunas exemplo">NOVE</div>
+      </div>
+      <div class="linha">
+        <div class="quatro colunas exemplo">QUATRO</div>
+        <div class="oito colunas exemplo">OITO</div>
+      </div>
+      <div class="linha">
+        <div class="cinco colunas exemplo">CINCO</div>
+        <div class="sete colunas exemplo">SETE</div>
+      </div>
+      <div class="linha">
+        <div class="seis colunas exemplo">SEIS</div>
+        <div class="seis colunas exemplo">SEIS</div>
+      </div>
+      <div class="linha">
+        <div class="sete colunas exemplo">SETE</div>
+        <div class="cinco colunas exemplo">CINCO</div>
+      </div>
+      <div class="linha">
+        <div class="oito colunas exemplo">OITO</div>
+        <div class="quatro colunas exemplo">QUATRO</div>
+      </div>
+      <div class="linha">
+        <div class="nove colunas exemplo">NOVE</div>
+        <div class="tres colunas exemplo">TRÊS</div>
+      </div>
+      <div class="linha">
+        <div class="dez colunas exemplo">DEZ</div>
+        <div class="duas colunas exemplo">DUAS</div>
+      </div>
+      <div class="linha">
+        <div class="onze colunas exemplo">ONZE</div>
+        <div class="uma coluna exemplo">UMA</div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas exemplo">DOZE</div>
+      </div>
+      <div class="linha">
+        <div class="quatro colunas exemplo">QUATRO</div>
+        <div class="quatro colunas exemplo">QUATRO</div>
+        <div class="quatro colunas exemplo">QUATRO</div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;div class=&quot;linha&quot;&gt;
+  &lt;div class=&quot;uma coluna&quot;&gt;UMA&lt;/div&gt;
+  &lt;div class=&quot;onze colunas&quot;&gt;ONZE&lt;/div&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;linha&quot;&gt;
+  &lt;div class=&quot;duas colunas&quot;&gt;DUAS&lt;/div&gt;
+  &lt;div class=&quot;dez colunas&quot;&gt;DEZ&lt;/div&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;linha&quot;&gt;
+  &lt;div class=&quot;tres colunas&quot;&gt;TR&Ecirc;S&lt;/div&gt;
+  &lt;div class=&quot;nove colunas&quot;&gt;NOVE&lt;/div&gt;
+&lt;/div&gt;
+  ...
+&lt;div class=&quot;linha&quot;&gt;
+  &lt;div class=&quot;quatro colunas&quot;&gt;QUATRO&lt;/div&gt;
+  &lt;div class=&quot;quatro colunas&quot;&gt;QUATRO&lt;/div&gt;
+  &lt;div class=&quot;quatro colunas&quot;&gt;QUATRO&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="tipografia" class="exemplo">Tipografia</h1>
+          <p>Cabeçalhos são identificados pelo respectivo elemento padrão. Nenhuma classe é necessária. O tamanho de fonte padrão (<code>font-size</code>) para o corpo do texto é de <strong>16px</strong>, com altura de linha (<code>line-height</code>) de <strong>1.6</strong>.</p>
+          <h2>Exemplo</h2>
+          <h1>Cabeçalho 1</h1>
+          <h2>Cabeçalho 2</h2>
+          <h3>Cabeçalho 3</h3>
+          <h4>Cabeçalho 4</h4>
+          <h5>Cabeçalho 5</h5>
+          <h6>Cabeçalho 6</h6>
+          <p>Parágrafo em <strong>negrito</strong> com <em>itálico</em>, um pouco de <u>sublinhado</u> e <mark>marcação</mark>.</p>
+          <p>Pra finalizar, um <a href="#b">link</a>.</p>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;h1&gt;Tipografia&lt;/h1&gt;
+&lt;h1&gt;Cabe&ccedil;alho 1&lt;/h1&gt;
+&lt;h2&gt;Cabe&ccedil;alho 2&lt;/h2&gt;
+&lt;h3&gt;Cabe&ccedil;alho 3&lt;/h3&gt;
+&lt;h4&gt;Cabe&ccedil;alho 4&lt;/h4&gt;
+&lt;h5&gt;Cabe&ccedil;alho 5&lt;/h5&gt;
+&lt;h6&gt;Cabe&ccedil;alho 6&lt;/h6&gt;
+&lt;p&gt;Par&aacute;grafo em &lt;strong&gt;negrito&lt;/strong&gt; com &lt;em&gt;it&aacute;lico&lt;/em&gt;, um pouco de &lt;u&gt;sublinhado&lt;/u&gt; e &lt;mark&gt;marca&ccedil;&atilde;o&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;Pra finalizar, um &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="botoes" class="exemplo">Botões</h1>
+          <h2>Botão padrão</h2>
+          <p>Botão com o mínimo de estilo, criado simplesmente inserindo um elemento que resulte em um botão, ou adicionando a classe <code>.botao</code> a um link (<code>a</code>).</p>
+          <button>Button</button>
+          <input type="button" value="Input">
+          <input type="submit" value="Submit">
+          <a href="#" class="botao">Link</a>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;button&gt;Button&lt;/button&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;botao&quot;&gt;Link&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h2>Botão destacado</h2>
+          <p>Botão em contraste com a cor padrão, criado ao adicionar as classes <code>.botao</code> e <code>.destacado</code> aos elementos que resultem em botões.</p>
+          <button class="botao destacado">Button</button>
+          <input type="button" value="Input" class="botao destacado">
+          <input type="submit" value="Submit" class="botao destacado">
+          <a href="#" class="botao destacado">Link</a>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;button class=&quot;botao destacado&quot;&gt;Button&lt;/button&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input&quot; class=&quot;botao destacado&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;botao destacado&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;botao destacado&quot;&gt;Link&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="formularios" class="exemplo">Formulários</h1>
+          <p>Dentro ou fora de um formulário (<code>form</code>), os elementos <code>input</code> dos tipos <code>email</code>, <code>number</code>, <code>search</code>, <code>text</code>, <code>tel</code>, <code>url</code> e <code>password</code>, <code>textarea</code>, <code>select</code> e <code>label</code> recebem estilos sem a necessidade de adicionar classes.</p>
+          <p>Para que o elemento em questão ocupe a largura total da coluna em que está inserido, pode-se utilizar a classe utilitária <code>.u-width-100</code>, que faz com que o elemento ocupe 100% da largura.</p>
+          <h2>Exemplo</h2>
+          <form>
+            <div class="linha">
+              <div class="seis colunas">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="u-width-100">
+              </div>
+              <div class="seis colunas">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" class="u-width-100">
+                  <option value="1">Opção 1</option>
+                  <option value="2">Opção 2</option>
+                  <option value="3">Opção 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="linha">
+              <div class="doze colunas">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="10" class="u-width-100"></textarea>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox"> Aceitar os termos
+            </label>
+            <input type="submit" value="Enviar" class="botao destacado">
+          </form>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;form&gt;
+  &lt;div class=&quot;linha&quot;&gt;
+    &lt;div class=&quot;seis colunas&quot;&gt;
+      &lt;label for=&quot;nome&quot;&gt;Nome&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;nome&quot; class=&quot;u-width-100&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;seis colunas&quot;&gt;
+      &lt;label for=&quot;assunto&quot;&gt;Assunto&lt;/label&gt;
+      &lt;select id=&quot;assunto&quot; class=&quot;u-width-100&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;Op&ccedil;&atilde;o 1&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Op&ccedil;&atilde;o 2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Op&ccedil;&atilde;o 3&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;linha&quot;&gt;
+    &lt;div class=&quot;doze colunas&quot;&gt;
+      &lt;label for=&quot;mensagem&quot;&gt;Mensagem&lt;/label&gt;
+      &lt;textarea id=&quot;mensagem&quot; rows=&quot;10&quot; class=&quot;u-width-100&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;checkbox&quot;&gt; Aceitar os termos
+  &lt;/label&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot; class=&quot;botao destacado&quot;&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="listas" class="exemplo">Listas</h1>
+          <p>Os elementos que compõem listas são estilizados diretamente, não havendo assim a necessidade da adição de classes. Ainda, é possível inserir listas dentro de listas.</p>
+          <h2>Exemplo</h2>
+        </div>
+        <div class="seis colunas">
+          <ul>
+            <li>Listas sem ordem tem estilo básico</li>
+            <li>
+              E podem ter até um nível interno
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div class="seis colunas">
+          <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;Listas sem ordem tem estilo b&aacute;sico&lt;/li&gt;
+  &lt;li&gt;
+    E podem ter at&eacute; um n&iacute;vel interno
+    &lt;ul&gt;
+      &lt;li&gt;Lorem ipsum&lt;/li&gt;
+      &lt;li&gt;Dolor sit amet&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="codigos" class="exemplo">Códigos</h1>
+          <p>Para facilitar a apresentação de pequenos trechos de código, estilos são aplicados aos elementos <code>code</code> e <code>pre</code>. Havendo necessidade de se apresentar longos trechos de código, recomenda-se o uso de uma biblioteca apropriada para a formatação, como <a href="https://highlightjs.org" target="_blank">highlight.js</a>, utilizada nos exemplos por aqui.</p>
+          <h2>Exemplo</h2>
+          <p>Código em linha <code>assim</code></p>
+          <pre><code class="nohighlight">.alguma-classe {
+  background-color: blue;
+}</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;p&gt;C&oacute;digo em linha &lt;code&gt;assim&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.alguma-classe {
+  background-color: blue;
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="tabelas" class="exemplo">Tabelas</h1>
+          <p>Uma tabela é estilizada diretamente também, evitando o uso de classes. Para atingir o resultado de largura total, é aconselhável o uso da classe utilitária <code>.u-width-100</code>.</p>
+          <h2>Exemplo</h2>
+          <table class="u-width-100">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sistema</th>
+                <th>Cidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Estevan Maito</td>
+                <td>24</td>
+                <td>Linux</td>
+                <td>Caxias do Sul</td>
+              </tr>
+              <tr>
+                <td>João Ninguém</td>
+                <td>30</td>
+                <td>Windows</td>
+                <td>Lugar Algum</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <pre><code class="html">&lt;table class=&quot;u-width-100&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nome&lt;/th&gt;
+      &lt;th&gt;Idade&lt;/th&gt;
+      &lt;th&gt;Sistema&lt;/th&gt;
+      &lt;th&gt;Cidade&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bill Jobs&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+      &lt;td&gt;Linux&lt;/td&gt;
+      &lt;td&gt;Oiapoque&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jo&atilde;o Ningu&eacute;m&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+      &lt;td&gt;Windows&lt;/td&gt;
+      &lt;td&gt;Lugar Algum&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
+      
+      <div class="linha">
+        <div class="doze colunas">
+          <h1 id="utilidades" class="exemplo">Utilidades</h1>
+          <p>Conjunto de classes utilizadas com frequência em diversos elementos.</p>
+          <ul>
+            <li><code>.u-width-100</code> - Expande um elemento a 100% da largura do elemento em que ele está contido. Comum em formulários e imagens.</li>
+          </ul>
+          <h2 id="imagens-responsivas">Imagens responsivas</h2>
+          <p>É possível tornar uma imagem responsiva adicionando a classe <code>.u-width-100</code> a ela.</p>
+          <h3>Exemplo</h3>
+          <div class="linha">
+            <div class="seis colunas">
+              <img src="https://static.pexels.com/photos/37646/new-york-skyline-new-york-city-city-37646-large.jpeg" class="u-width-100">
+            </div>
+            <div class="seis colunas">
+              <img src="https://static.pexels.com/photos/28221/pexels-photo-28221-large.jpg" class="u-width-100">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="linha">
+          <div class="doze colunas">
+            <pre><code class="html">&lt;div class=&quot;linha&quot;&gt;
+  &lt;div class=&quot;seis colunas&quot;&gt;
+    &lt;img src=&quot;img/exemplo1.jpg&quot; class=&quot;u-width-100&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;seis colunas&quot;&gt;
+    &lt;img src=&quot;img/exemplo2.jpg&quot; class=&quot;u-width-100&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="quatro colunas">
+      <nav class="docs-nav">
+        <ul>
+          <li><a href="#apresentacao">Apresentação</a></li>
+          <li><a href="#como-usar">Como usar</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#tipografia">Tipografia</a></li>
+          <li><a href="#botoes">Botões</a></li>
+          <li><a href="#formularios">Formulários</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#codigos">Códigos</a></li>
+          <li><a href="#tabelas">Tabelas</a></li>
+          <li><a href="#utilidades">Utilidades</a></li>
+          <li><a href="#imagens-responsivas">Imagens responsivas</a></li>
+          <li><a href="#" class="botao destacado">Crie seu próprio framework</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div> <!-- fim container -->
+
+<a href="https://github.com/estevanmaito" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<!-- Highlight.js -->
+<script src="js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function(e) {
+    const sideNav = document.querySelector('.docs-nav');
+    const apresentacao = document.querySelector('#apresentacao');
+
+    sideNav.addEventListener('click', function(e) {
+      const activeLink = document.querySelector('a.active');
+      if (activeLink) {
+        activeLink.classList.remove('active');
+      }
+      e.target.classList.add('active');
+    }, false);
+
+    if (window.innerWidth > 750) {
+      window.addEventListener('scroll', function(e) {
+        if (apresentacao.getBoundingClientRect().top <= 0) {
+          sideNav.classList.add('fixed');
+        } else {
+          sideNav.classList.remove('fixed');
+        }
+      }, false);
+    }
+
+  }, false);
+  
+</script>
+
+</body>
+</html>

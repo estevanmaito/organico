@@ -1,0 +1,407 @@
+/* Tabela de conteúdos
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Estilos base
+- Grid
+- Tipografia
+- Links
+- Botões
+- Formulários
+- Listas
+- Código
+- Tabelas
+- Espaçamento
+- Utilidades
+*/
+
+/* Estilos base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+html {
+  font-size: 62.5%; /* 16px pra 10px */
+}
+
+body {
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Open Sans" ,"Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  max-width: 990px;
+}
+
+.linha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.coluna,
+.colunas {
+  box-sizing: border-box;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    width: 80%;
+  }
+
+  .uma.coluna,
+  .uma.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.33333333%;
+            flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+  }
+
+  .duas.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66666667%;
+            flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+  }
+
+  .tres.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .quatro.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333333%;
+            flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+  }
+
+  .cinco.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666667%;
+            flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
+  }
+
+  .seis.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .sete.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333333%;
+            flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+  }
+
+  .oito.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66666667%;
+            flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+  }
+
+  .nove.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .dez.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333333%;
+            flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
+  }
+
+  .onze.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.66666667%;
+            flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
+  }
+
+  .doze.colunas {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Tipografia
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #333;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #337ab7;
+}
+
+a:hover,
+a:focus {
+  color: #23527c;
+}
+
+a:visited {
+  color: #c34f4a;
+}
+
+/* Botões
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.botao,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  color: #555;
+  cursor: default;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 3rem;
+  height: 3.8rem;
+}
+
+.botao:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  border-color: #888;
+  color: #333;
+}
+
+.botao:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #f1f1f1;
+  border-color: #888;
+  outline: 0;
+}
+
+.botao:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.botao.destacado,
+button.botao.destacado,
+input[type="submit"].botao.destacado,
+input[type="reset"].botao.destacado,
+input[type="button"].botao.destacado {
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+  color:  #fff;
+}
+
+.botao.destacado:hover,
+button.botao.destacado:hover,
+input[type="submit"].botao.destacado:hover,
+input[type="reset"].botao.destacado:hover,
+input[type="button"].botao.destacado:hover,
+.botao.destacado:focus,
+button.botao.destacado:focus,
+input[type="submit"].botao.destacado:focus,
+input[type="reset"].botao.destacado:focus,
+input[type="button"].botao.destacado:focus {
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+  color: #fff;
+}
+
+.botao:visited {
+  color: #555
+}
+
+.botao.destacado:visited {
+  color: #fff;
+}
+
+/* Formulários
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  box-sizing: border-box;
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font: inherit;
+  padding: .6rem 1rem;
+  height: 3.8rem;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33c3f0;
+  outline: 0;
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+}
+
+/* Listas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ol,
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Código
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  color: #c7254e;
+  padding: .2rem .5rem;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+/* Tabelas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1rem .7rem;
+  text-align: left;
+}
+
+/* Espaçamento
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.botao,
+button,
+input,
+select,
+textarea,
+table {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: .4rem;
+}
+
+/* Utilidades
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-width-100 {
+  box-sizing: border-box;
+  width: 100%;
+}
